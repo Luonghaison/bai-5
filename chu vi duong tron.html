@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chu vi duong tron</title>
+</head>
+<body>
+<h1 id="chuvi"></h1>
+<label>
+  nhap ban kinh:
+</label>
+<input type="number" id="bk">
+<button onclick="tongchuvi()">click</button>
+<script>
+    function tongchuvi() {
+        let bankinh= document.getElementById("bk").value
+        let chuvi= bankinh*2*3.14
+        document.getElementById("chuvi").innerHTML="CHU VI LA:" + chuvi
+
+    }
+
+</script>
+</body>
+</html>

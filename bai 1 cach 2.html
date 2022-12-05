@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh diem trung binh</title>
+</head>
+<body>
+<h1 id="diemtrungbinh"></h1>
+<labe>
+    diem ly
+</labe>
+<input type="number" id="ly">
+<label>
+    diem hoa
+</label>
+<input type="number" id="hoa">
+<label>
+    diem sinh
+</label>
+<input type="number" id="sinh">
+<button onclick="diemTrungBinh()">diem trung binh</button>
+<script>
+    function diemTrungBinh() {
+        let ly = +document.getElementById("ly").value
+        let hoa = +document.getElementById("hoa").value
+        let sinh = +document.getElementById("sinh").value
+
+        let avg= (ly+hoa+sinh)/3
+        console.log(avg)
+        document.getElementById("diemtrungbinh").innerText="diem trung binh:" + avg
+
+    }
+</script>
+</body>
+</html>
