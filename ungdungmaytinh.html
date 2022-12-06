@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ungdungmaytinh</title>
+</head>
+<body>
+<h1>CACULATOR</h1>
+<input type="number" id="bang1">
+<input type="number" id="bang2"><br><br>
+<button onclick="cong()">Cong</button>
+<button onclick="tru()">Tru</button>
+<button onclick="nhan()">Nhan</button>
+<button onclick="chia()">Chia</button>
+<h2 id="ketqua"></h2>
+<script>
+    function cong() {
+     let bang1= +document.getElementById("bang1").value;
+     let bang2= +document.getElementById("bang2").value;
+     let ketquacong = (bang1 + bang2);
+     document.getElementById("ketqua").innerHTML="ket qua la:" + ketquacong;
+ }
+  function tru() {
+      let bang1= document.getElementById("bang1").value;
+      let bang2= document.getElementById("bang2").value;
+      let ketquatru = (bang1 - bang2)
+      document.getElementById("ketqua").innerHTML="ket qua la:" + ketquatru;
+  }
+  function nhan() {
+      let bang1= document.getElementById("bang1").value;
+      let bang2= document.getElementById("bang2").value;
+      let ketquanhan = (bang1 * bang2);
+      document.getElementById("ketqua").innerHTML="ket qua la:" + ketquanhan;
+  }
+  function chia() {
+      let bang1= document.getElementById("bang1").value;
+      let bang2= document.getElementById("bang2").value;
+      let ketquachia = (bang1 / bang2);
+      document.getElementById("ketqua").innerHTML="ket qua la:" + ketquachia;
+  }
+</script>
+</body>
+</html>

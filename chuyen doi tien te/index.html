@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doitien</title>
+</head>
+<body>
+<input type="text" id="haison">
+<select name="" id="a">
+    <option value="vnd">VND</option>
+    <option value="usd">USD</option>
+</select>
+<select name="" id="b">
+    <option value="vnd">VND</option>
+    <option value="usd">USD</option>
+</select>
+<button onclick="luonghaison()">Convert</button>
+<h1 id="luonghaisonpro"></h1>
+<script>
+    function luonghaison() {
+        let giatrivao = document.getElementById('haison').value;
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        if (a == b) {
+            alert("Khong duoc");
+        }
+        if (a == "vnd" && b == "usd") {
+            document.getElementById("luonghaisonpro").innerText = "So tien cua ban la:" + (giatrivao / 24000)
+        }
+        if (a == "usd" && "b==vnd") {
+            document.getElementById("luonghaisonpro").innerText = "So tien cua ban la:" + (giatrivao * 24000)
+        }
+
+
+    }
+</script>
+</body>
+</html>
